@@ -2,13 +2,13 @@
 
 Node, npm or yarn
 
-# setting MTG-frontend up
+# Setting MTG-frontend up
 
-git clone https://github.com/Georgitsis/mtg-frontend.git
+git clone `https://github.com/Georgitsis/mtg-frontend.git`
 cd mtg-frontend
 npm install ...or... yarn
 
-# start MTG-frontend
+# Start MTG-frontend
 
 npm start (In the project directory)
 
