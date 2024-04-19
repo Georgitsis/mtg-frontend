@@ -14,7 +14,7 @@
   padding: 0.5rem;
 }
 
-.sidebar {
+.search-element {
   grid-area: _sidebar;
   border: 1px solid black;
   padding: 0.5rem;
