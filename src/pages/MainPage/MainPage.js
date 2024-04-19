@@ -1,4 +1,4 @@
-//import "./App.css";
+import "./main-page.css";
 
 function MainPage() {
   return <div className="main-view">MainView</div>;

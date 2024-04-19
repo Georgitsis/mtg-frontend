@@ -1,0 +1,6 @@
+@use "../../themes/theme" as theme;
+
+.main-view {
+  background-color: theme.$background-color;
+  color: theme.$text-color;
+}
