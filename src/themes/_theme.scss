@@ -5,3 +5,14 @@ $background-color: #f8f9fa; // Background color: a light grayish tone
 $text-color: #212529; // Text color: a dark grayish tone
 $accent-color: #ffc107; // Accent color: a shade of yellow
 $error-color: #dc3545; // Error/Alert color: a shade of red
+
+//@media widths
+$mobile-device-max-width: 480px;
+$extra-small-device-max-width: 767px;
+$small-device-max-width: 991px;
+$laptop-max-width: 1199px;
+$desktop-max-width: 1919px;
+$extra-large-screen-max-width: 1920px;
+
+//
+$root-container-padding: 1rem;

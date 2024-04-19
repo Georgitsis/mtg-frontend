@@ -1,6 +1,35 @@
 @use "../../themes/theme" as theme;
 
-.main-view {
-  background-color: theme.$background-color;
-  color: theme.$text-color;
+.main-page {
+  display: grid;
+  gap: 1rem;
+  height: calc(100dvh - theme.$root-container-padding - theme.$root-container-padding);
+  padding: theme.$root-container-padding;
+
+  grid-template-columns: minmax(200px, 25%) 1fr;
+  grid-template-rows: max(50px) 1fr max(30px);
+  grid-template-areas:
+    "_header _header"
+    "_sidebar _content"
+    "_footer _footer";
+}
+
+.header {
+  grid-area: _header;
+  border: 1px solid black;
+}
+
+.sidebar {
+  grid-area: _sidebar;
+  border: 1px solid black;
+}
+
+.content {
+  grid-area: _content;
+  border: 1px solid black;
+}
+
+.footer {
+  grid-area: _footer;
+  border: 1px solid black;
 }

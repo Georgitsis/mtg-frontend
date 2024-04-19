@@ -1,4 +1,29 @@
-.main-view {
-  background-color: #f8f9fa;
-  color: #212529;
+.main-page {
+  display: grid;
+  gap: 1rem;
+  height: calc(100dvh - 1rem - 1rem);
+  padding: 1rem;
+  grid-template-columns: minmax(200px, 25%) 1fr;
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-areas: "_header _header" "_sidebar _content" "_footer _footer";
+}
+
+.header {
+  grid-area: _header;
+  border: 1px solid black;
+}
+
+.sidebar {
+  grid-area: _sidebar;
+  border: 1px solid black;
+}
+
+.content {
+  grid-area: _content;
+  border: 1px solid black;
+}
+
+.footer {
+  grid-area: _footer;
+  border: 1px solid black;
 }/*# sourceMappingURL=main-page.css.map */
