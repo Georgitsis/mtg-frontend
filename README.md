@@ -1,3 +1,8 @@
+# Description
+
+The frontend to a Magic the Gathering card finder and collection organizer web application.
+The application is realzied with react.js
+
 # Requirements
 
 Node, npm or yarn
