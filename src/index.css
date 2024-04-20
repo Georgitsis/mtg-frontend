@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Reset box-sizing to border-box for all elements */
+* {
+  box-sizing: border-box;
+}
