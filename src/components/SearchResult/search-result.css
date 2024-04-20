@@ -1,0 +1,14 @@
+.displayed-cards-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 992px) {
+  .displayed-cards-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}/*# sourceMappingURL=search-result.css.map */

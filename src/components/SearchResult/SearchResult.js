@@ -1,22 +1,20 @@
 import { useEffect } from "react";
-//import "./search-result.css";
+import "./search-result.css";
+import CardWithTextComponent from "../CardWithTextComponent/CardWithTextComponent";
 
 function SearchResult(props) {
   const { className, searchResultList } = props;
 
   //const [displayedCardsList, setDisplayedCardsList] = useState(...searchResultList);
-  useEffect(() => {
-    console.log(className);
-    console.log("searchResultList in SearchResult :", searchResultList);
-  });
+  useEffect(() => {});
 
   return (
     <div className={className}>
-      <ul>
+      <h1>Search result</h1>
+      <hr></hr>
+      <ul className="displayed-cards-list">
         {searchResultList.map((card, index) => (
-          <li key={index}>
-            <img src={card.imageUrl} alt={"Image of " + card.name} />
-          </li>
+          <CardWithTextComponent key={"card-" + index} card={card} />
         ))}
       </ul>
     </div>

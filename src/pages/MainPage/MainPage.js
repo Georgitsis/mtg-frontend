@@ -8,9 +8,13 @@ function MainPage() {
 
   const handleQuery = async (queryString) => {
     try {
+      setSearchResultList([]);
       const response = await fetch("https://api.magicthegathering.io/v1/cards?name=" + queryString);
       const data = await response.json();
-      setSearchResultList(data.cards);
+      const filteredCardsList = data.cards.filter((card) => {
+        if (card.number.slice(-1) != "★" && card.setName.slice(-6) != "Promos") return card;
+      });
+      setSearchResultList(filteredCardsList);
     } catch (error) {
       console.error("Error fetching data:", error);
     }

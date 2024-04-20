@@ -1,0 +1,16 @@
+@use "../../themes/theme" as theme;
+
+.displayed-cards-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: #{theme.$small-device-max-width + 1px}) {
+  .displayed-cards-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
