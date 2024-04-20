@@ -7,7 +7,6 @@ function MainPage() {
     try {
       const response = await fetch("https://api.magicthegathering.io/v1/cards?name=" + queryString);
       const data = await response.json();
-      // Handle the data here
       console.log(data);
     } catch (error) {
       console.error("Error fetching data:", error);
