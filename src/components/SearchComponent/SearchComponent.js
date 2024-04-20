@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./search-component.css";
 
 function SearchComponent(props) {
-  const { className, handleQuerry } = props;
+  const { className, handleQuery } = props;
 
   const [inputValue, setInputValue] = useState("");
 
@@ -11,7 +11,7 @@ function SearchComponent(props) {
   };
 
   const handleClick = (querryString) => {
-    handleQuerry(querryString); // Call handleQuerry when the button is clicked
+    handleQuery(querryString); // Call handleQuerry when the button is clicked
   };
 
   return (
