@@ -14,7 +14,7 @@ function SearchResult(props) {
       <hr></hr>
       <ul className="displayed-cards-list">
         {searchResultList.map((card, index) => (
-          <CardWithTextComponent key={"card-" + index} card={card} />
+          <CardWithTextComponent className="card-with-text" key={"card-" + index} card={card} />
         ))}
       </ul>
     </div>

@@ -1,4 +1,37 @@
+.card-with-text {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas: "_image _header" "_image _types" "_image _text" "_image _pow-tough";
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-columns: 230px 1fr;
+}
+
 .card-image {
   height: 310px;
   width: auto;
+  grid-area: _image;
+}
+
+.card-header {
+  grid-area: _header;
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.card-type {
+  grid-area: _types;
+  font-size: large;
+  font-weight: bold;
+}
+
+.card-text {
+  grid-area: _text;
+  text-align: justify;
+}
+
+.card-pow-tough {
+  grid-area: _pow-tough;
+  text-align: right;
+  font-size: large;
+  font-weight: bold;
 }/*# sourceMappingURL=card-with-text-component.css.map */
