@@ -20,7 +20,7 @@
   padding: 0.5rem;
 }
 
-.content {
+.search-result {
   grid-area: _content;
   border: 1px solid black;
   padding: 0.5rem;
