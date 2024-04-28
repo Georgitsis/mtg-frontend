@@ -1,13 +1,13 @@
 //import {} from "react";
 import "./card-with-text-component.css";
-import { LuImageOff } from "react-icons/lu";
+import noImage from "../../assets/images/NoImage.png";
 
 function CardWithTextComponent(props) {
   const { card, className } = props;
-  if (!card.imageUrl) console.log(card);
+  console.log(card.imageUrl);
   return (
     <li className={className}>
-      <img src={card.imageUrl} alt={"Image of " + card.name} className="card-image" />
+      <img src={card.imageUrl ? card.imageUrl : noImage} alt={"Image of " + card.name} className="card-image" />
       <div className="card-header">{card.name}</div>
       <div className="card-type">{card.type}</div>
       <div className="card-text">{card.text}</div>
