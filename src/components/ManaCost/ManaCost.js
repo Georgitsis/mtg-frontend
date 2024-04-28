@@ -1,4 +1,5 @@
 import React from "react";
+import "./ManaCost.css";
 
 export default function ManaCost(props) {
   const { manaCost } = props;

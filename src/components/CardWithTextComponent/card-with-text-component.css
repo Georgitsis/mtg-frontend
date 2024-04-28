@@ -3,12 +3,13 @@
   gap: 1rem;
   grid-template-areas: "_image _header" "_image _types" "_image _text" "_image _pow-tough";
   grid-template-rows: auto auto 1fr auto;
-  grid-template-columns: 230px 1fr;
+  grid-template-columns: minmax(1fr, 230px) 1fr;
 }
 
 .card-image {
-  height: 310px;
-  width: auto;
+  height: auto;
+  width: 100%;
+  max-width: 230px;
   grid-area: _image;
 }
 
