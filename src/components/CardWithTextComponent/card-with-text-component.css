@@ -23,11 +23,6 @@
   font-weight: bolder;
 }
 
-.card-mana-cost {
-  height: 100%;
-  width: auto;
-}
-
 .card-type {
   grid-area: _types;
   font-size: large;
