@@ -6,7 +6,7 @@
     "_image _types"
     "_image _text"
     "_image _pow-tough";
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: 2rem auto 1fr auto;
   grid-template-columns: max(230px) 1fr;
 }
 
@@ -18,8 +18,18 @@
 
 .card-header {
   grid-area: _header;
-  font-size: x-large;
+  display: flex;
+}
+
+.card-name {
+  flex: 1 1 10rem;
+  font-size: 2rem;
   font-weight: bolder;
+}
+
+.card-mana-cost {
+  height: 100%;
+  width: auto;
 }
 
 .card-type {
